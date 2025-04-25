@@ -38,7 +38,7 @@ if you want to run the framework locally ,there is the following steps
 ### step3 clone and install python package
 
 ```bash
-  git clone xxx.git
+  git clone git@github.com:kunkka1004/etl.git
   cd etl
   uv pip install -r pyproject.toml 
 ```
@@ -58,7 +58,7 @@ python run main.py
 ## step2:build and run
 
 ```shell
-git clone xxx.git
+git clone git@github.com:kunkka1004/etl.git
 cd etl
 
 ## start docker container with fist time
