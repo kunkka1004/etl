@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  etl:
+    image: etl-job:v1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: etl-job
+    working_dir: /etl
+    volumes:
+      - .:/etl
+      - ./data:/etl/data
+      - ./logs:/etl/logs
+    command: python main.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

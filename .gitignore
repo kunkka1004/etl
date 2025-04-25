@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+.env
+.venv/
+.git/
+tests/
+data/
+notebooks/
+.DS_Store
+.idea/
+.python-version
